@@ -1,0 +1,36 @@
+Software: Visualization for solutions of Travelling Saleman Problem
+Author: Hy Truong Son
+Major: BSc. Computer Science
+Class: 2013 - 2016
+Institution: Eotvos Lorand University
+Email: sonpascal93@gmail.com
+Website: http://people.inf.elte.hu/hytruongson/
+Copyright 2015 (c) Hy Truong Son. All rights reserved. Use for academic purposes only.
+
+Compilation
+-----------
+$ g++ WriteTest.cpp -o WriteTest
+$ g++ AntColony.cpp -o AntColony
+$ g++ GA_Normal.cpp -o GA_Normal
+$ g++ GA_Optimal.cpp -o GA_Optimal
+$ g++ DP.cpp -o DP
+$ javac TSP.java
+
+Usage
+-----
+Create an input file Graph.INP containing the coordinates of points in the range [800, 600] and number of points is 60:
+$ ./WriteTest 800 600 60
+
+Run Ant Colony algorithm. Input: Graph.INP. Output: AntColony.OUT
+$ ./AntColony
+
+Run Genetic Algorithm. Input: Graph.INP. Output: GA.OUT
+$ ./GA_Normal
+or
+$ ./GA_Optimal
+
+Visualize the solution for Ant Colony algorithm. Output image: AntColony.bmp
+$ java TSP AntColony
+
+Visualize the solution for Genetic algorithm. Output image: GA.bmp
+$ java TSP GA
